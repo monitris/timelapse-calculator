@@ -1,0 +1,122 @@
+.mns-tlp-calculator-outer{
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.mns-tlp-calculator{
+    width: 92%;
+    margin: 0 auto;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 0px 14px rgba(0,0,0,0.08);
+}
+.mns-tlp-calculator-inputs{
+    margin-bottom: 40px;
+}
+.mns-tlp-calculator-inputa{
+    width: 100%;
+}
+.mns-tlp-calculate{
+    position: relative;
+}
+.mns-tlp-calculate select{
+    width: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+    font-size: inherit;
+    padding: 0.4em 2.2em 0.4em 0.4em;
+    background-color: #f1f1f1;
+    border: 1px solid #caced1;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer; 
+}
+.mns-tlp-calculate::before,
+.mns-tlp-calculate::after{
+    --size: 0.3rem;
+    content: "";
+    position: absolute;
+    right: 1rem;
+    pointer-events: none;
+}
+.mns-tlp-calculate::before{
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-bottom: var(--size) solid black;
+    top: 30%;
+}
+.mns-tlp-calculate::after{
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-top: var(--size) solid black;
+    top: 55%;
+}
+
+
+
+/* =========== inputs ==================*/
+.mns-tlp-calculator-inputa,.mns-tlp-calculator-inputb,.mns-tlp-calculator-inputc,.mns-tlp-calculator-inputd,.mns-tlp-calculator-inpute,.mns-tlp-calculator-inputf,.mns-tlp-calculator-inputg{
+    margin-bottom: 18px;
+}
+.mns-tlp-calculator-inputa label,.mns-tlp-calculator-inputb label,.mns-tlp-calculator-inputc label,.mns-tlp-calculator-inputd label,.mns-tlp-calculator-inpute label,.mns-tlp-calculator-inputf label,.mns-tlp-calculator-inputg label{
+    display: block;
+    margin-bottom: 8px;
+}
+.mns-tlp-calculator-inputb-unit,.mns-tlp-calculator-inputc-unit,.mns-tlp-calculator-inputd-unit,.mns-tlp-calculator-inpute-unit,.mns-tlp-calculator-inputf-unit,.mns-tlp-calculator-inputg-unit{
+    color: #888;
+    font-size: 14px;
+}
+.mns-tlp-calculator input{
+    border: 1px solid #caced1;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    color: #222;
+    padding: 0.4em;
+}
+
+/* ============= outputs =============*/
+
+.mns-tlp-calculator-outputa,.mns-tlp-calculator-outputb,.mns-tlp-calculator-outputc,.mns-tlp-calculator-outputd,.mns-tlp-calculator-outpute{
+    margin-bottom: 10px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+.mns-tlp-calculator-outputa-type,.mns-tlp-calculator-outputb-type,.mns-tlp-calculator-outputc-type,.mns-tlp-calculator-outputd-type,.mns-tlp-calculator-outpute-type{
+   font-weight: 600;
+}
+.mns-tlp-calculator-outputa-value,.mns-tlp-calculator-outputb-value,.mns-tlp-calculator-outputc-value,.mns-tlp-calculator-outputd-value,.mns-tlp-calculator-outpute-value{
+    margin-left: auto;
+}
+.mns-tlp-calculator-outputa-unit,.mns-tlp-calculator-outputb-unit,.mns-tlp-calculator-outputc-unit,.mns-tlp-calculator-outputd-unit,.mns-tlp-calculator-outpute-unit{
+    margin-left: 10px;
+}
+
+@media(min-width:620px){
+    .mns-tlp-calculator-inputa{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .mns-tlp-calculator-inputb-unit,.mns-tlp-calculator-inputc-unit,.mns-tlp-calculator-inputd-unit,.mns-tlp-calculator-inpute-unit,.mns-tlp-calculator-inputf-unit,.mns-tlp-calculator-inputg-unit{
+        margin-left: 8px;
+    }
+    .mns-tlp-calculator-inputa,.mns-tlp-calculator-inputb,.mns-tlp-calculator-inputc,.mns-tlp-calculator-inputd,.mns-tlp-calculator-inpute,.mns-tlp-calculator-inputf,.mns-tlp-calculator-inputg{
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+    }
+    .mns-tlp-calculator-inputa label,.mns-tlp-calculator-inputb label,.mns-tlp-calculator-inputc label,.mns-tlp-calculator-inputd label,.mns-tlp-calculator-inpute label,.mns-tlp-calculator-inputf label,.mns-tlp-calculator-inputg label{
+        display: inline-flex;
+        margin-bottom: 0px;
+        width: 180px;
+    }
+    .mns-tlp-calculator-outputa,.mns-tlp-calculator-outputb,.mns-tlp-calculator-outputc,.mns-tlp-calculator-outputd,.mns-tlp-calculator-outpute{
+        display: flex;
+        align-items: center;;
+    }
+}
+
+.mns-tlp-d-none{
+    display: none;
+}
